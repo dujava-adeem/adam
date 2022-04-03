@@ -1,0 +1,23 @@
+<H1>Hello Dominik</H1>
+<H1>Hello {{title}}</H1>
+
+<app-generator></app-generator>
+<app-kurzy></app-kurzy>
+<p>My age is {{vek}}</p>
+<p>My age is
+  <span *ngIf="this.title2=== true">{{title1}}</span>
+  <span *ngIf="this.title2=== false">{{title99}}</span>
+</p>
+
+{{pole}}
+
+<p *ngFor="let utocnik of pole" style="color: red">{{utocnik}}</p>
+
+<div *ngFor="let os of osoby" class="kontajner">
+  <h1>{{os.meno}}</h1>
+  <h3>{{os.priezvisko}}</h3>
+  <p>{{os.firma}}</p>
+</div>
+
+
+
